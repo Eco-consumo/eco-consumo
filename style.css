@@ -1,0 +1,190 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 25px;
+background: #ffffff;
+font-family: Arial, sans-serif;
+color: #202b43;
+}
+
+.encabezado {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 65px;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+font-size: 20px;
+}
+
+.icono-logo {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 42px;
+height: 42px;
+background: #202b43;
+border-radius: 10px;
+color: white;
+}
+
+.perfil {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 55px;
+height: 55px;
+border-radius: 50%;
+background: #d8eeee;
+color: #276c48;
+font-size: 35px;
+}
+
+.subtitulo {
+margin-bottom: 10px;
+color: #32864e;
+font-size: 15px;
+font-weight: bold;
+}
+
+h1 {
+margin: 0;
+font-size: 48px;
+line-height: 1.05;
+font-weight: 800;
+}
+
+.botones {
+display: flex;
+align-items: center;
+gap: 18px;
+margin-top: 35px;
+margin-bottom: 45px;
+}
+
+button {
+padding: 17px 25px;
+border-radius: 10px;
+font-size: 15px;
+cursor: pointer;
+}
+
+.comprar {
+background: #359a55;
+color: white;
+border: none;
+}
+
+.vender {
+background: white;
+color: #617d82;
+border: 2px solid #8aacab;
+}
+
+.carrito {
+margin-left: auto;
+width: 58px;
+height: 58px;
+padding: 0;
+border: none;
+border-radius: 50%;
+background: #359a55;
+color: white;
+font-size: 25px;
+}
+
+.productos {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 25px;
+}
+
+.producto {
+padding: 15px;
+border-radius: 30px;
+background: #e7e4fb;
+text-align: center;
+}
+
+.foto {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 210px;
+border-radius: 25px;
+background: white;
+overflow: hidden;
+}
+
+.foto img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+padding: 12px;
+}
+
+.foto span {
+font-size: 65px;
+}
+
+.producto p {
+margin: 15px 0 8px;
+color: #77718f;
+font-size: 15px;
+}
+
+.producto h3 {
+margin: 8px 0;
+font-size: 19px;
+}
+
+.disponible {
+display: inline-block;
+padding: 5px 12px;
+border-radius: 20px;
+background: #b7e8bf;
+color: #287542;
+font-size: 11px;
+}
+
+@media (max-width: 500px) {
+body {
+padding: 18px;
+}
+
+.encabezado {
+margin-bottom: 55px;
+}
+
+h1 {
+font-size: 39px;
+}
+
+.botones {
+gap: 10px;
+}
+
+button {
+padding: 14px 13px;
+}
+
+.productos {
+gap: 16px;
+}
+
+.producto {
+padding: 10px;
+border-radius: 23px;
+}
+
+.foto {
+height: 145px;
+}
+}
